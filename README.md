@@ -35,18 +35,18 @@ Student Aid is a comprehensive Android-based mobile application developed to sim
    - Real-time text messaging
    - Speech-to-Text integration
    - Text-to-Speech playback
-   - 
+     
 **Technology Stack**
 
-Programming Language: Java
+- Programming Language: Java
 
-Development Environment: Android Studio
+- Development Environment: Android Studio
 
-Database: SQLite
+- Database: SQLite
 
-User Interface: XML
+- User Interface: XML
 
-APIs Used: Google Maps API, FusedLocationProviderClient, SpeechRecognizer API, TextToSpeech API
+- APIs Used: Google Maps API, FusedLocationProviderClient, SpeechRecognizer API, TextToSpeech API
 
 **System Requirements:**
 
