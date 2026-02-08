@@ -41,9 +41,9 @@ Student Aid is a comprehensive Android-based mobile application developed to sim
 ## Screenshots
 
 ### 🔹 Role Selection
-<p align="center">
+[<p align="center">
   <img src="appScreenshots/RoleSelection.png" width="350"/>
-</p>
+</p>](https://github.com/RAGAVI-2004/Student-Aid-App/blob/main/appScreenshots/RoleSelection.jpeg)
 
 ### 🔹 Login Page
 <p align="center">
