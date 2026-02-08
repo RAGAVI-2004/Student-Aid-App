@@ -96,7 +96,7 @@ Student Aid is a comprehensive Android-based mobile application developed to sim
 
 ### 🔹 Guidance Chat
 <p align="center">
-  <img src="appScreenshots/GuidanceChat.png" width="350"/>
+  <img src=["appScreenshots/GuidanceChat.png](https://github.com/RAGAVI-2004/Student-Aid-App/blob/main/appScreenshots/Guidance%20Chat.jpeg)" width="350"/>
 </p>
 
 **Technology Stack**
