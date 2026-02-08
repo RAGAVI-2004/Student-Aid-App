@@ -35,7 +35,70 @@ Student Aid is a comprehensive Android-based mobile application developed to sim
    - Real-time text messaging
    - Speech-to-Text integration
    - Text-to-Speech playback
-     
+
+---
+
+## Screenshots
+
+### 🔹 Role Selection
+<p align="center">
+  <img src="appScreenshots/RoleSelection.png" width="350"/>
+</p>
+
+### 🔹 Login Page
+<p align="center">
+  <img src="appScreenshots/Loginpage.png" width="350"/>
+</p>
+
+### 🔹 Signup Page
+<p align="center">
+  <img src="appScreenshots/Signuppage.png" width="350"/>
+</p>
+
+### 🔹 Student Dashboard
+<p align="center">
+  <img src="appScreenshots/StudentDashboard.png" width="350"/>
+</p>
+
+### 🔹 Teacher Dashboard
+<p align="center">
+  <img src="appScreenshots/TeachersDashboard.png" width="350"/>
+</p>
+
+### 🔹 Study Material Upload
+<p align="center">
+  <img src="appScreenshots/StudyMaterialUpload.png" width="350"/>
+</p>
+
+### 🔹 Roommate Finder
+<p align="center">
+  <img src="appScreenshots/RoomateFinder.png" width="350"/>
+</p>
+
+---
+
+## 🔍 Lost & Found Module
+
+### 🔹 Lost & Found Dashboard
+<p align="center">
+  <img src="appScreenshots/LostAndFound/lost_found_dashboard.jpeg" width="350"/>
+</p>
+
+### 🔹 Reporting Lost Item
+<p align="center">
+  <img src="appScreenshots/LostAndFound/reporting_lost_item.jpeg" width="350"/>
+</p>
+
+### 🔹 View Lost & Found Items
+<p align="center">
+  <img src="appScreenshots/LostAndFound/view_lost_found_items.jpeg" width="350"/>
+</p>
+
+### 🔹 Guidance Chat
+<p align="center">
+  <img src="appScreenshots/GuidanceChat.png" width="350"/>
+</p>
+
 **Technology Stack**
 
 - Programming Language: Java
