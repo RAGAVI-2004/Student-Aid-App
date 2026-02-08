@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Study Material"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#21808D"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="24dp"/>
+
+        <!-- Title Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title *"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Description Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description *"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:maxLines="5"
+                android:gravity="top"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Subject Dropdown -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject *"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#212121"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Material Type Dropdown -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Material Type *"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#212121"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Select File Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSelectFile"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📎 Select File"
+            app:icon="@android:drawable/ic_menu_upload"
+            android:textAllCaps="false"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- File Name Display -->
+        <TextView
+            android:id="@+id/tvSelectedFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No file selected"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="#4CAF50"
+            android:textStyle="italic"
+            android:visibility="gone"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Upload Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📤 Upload Material"
+            app:backgroundTint="#21808D"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:padding="14dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- View Materials Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewMaterials"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📚 View All Materials"
+            app:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:padding="14dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

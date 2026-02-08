@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="subjects_array">
+        <item>All Subjects</item>
+        <item>Mathematics</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Biology</item>
+        <item>Computer Science</item>
+        <item>English</item>
+        <item>History</item>
+        <item>Geography</item>
+        <item>Economics</item>
+        <item>Business Studies</item>
+        <item>Accounting</item>
+        <item>Psychology</item>
+        <item>Sociology</item>
+        <item>Political Science</item>
+        <item>Philosophy</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="material_types">
+        <item>Notes</item>
+        <item>Textbook</item>
+        <item>Question Paper</item>
+        <item>Assignment</item>
+        <item>Project</item>
+        <item>Presentation</item>
+        <item>Video</item>
+        <item>Audio</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="budget_ranges">
+        <item>Any</item>
+        <item>Under $500</item>
+        <item>$500 - $750</item>
+        <item>$750 - $1000</item>
+        <item>$1000 - $1500</item>
+        <item>$1500 - $2000</item>
+        <item>Above $2000</item>
+    </string-array>
+
+    <string-array name="gender_preferences">
+        <item>Any</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="lifestyle_preferences">
+        <item>Early Bird</item>
+        <item>Night Owl</item>
+        <item>Non-Smoker</item>
+        <item>Pet Friendly</item>
+        <item>Vegetarian</item>
+        <item>Vegan</item>
+        <item>Clean and Tidy</item>
+        <item>Quiet and Reserved</item>
+        <item>Social and Outgoing</item>
+        <item>Student</item>
+        <item>Working Professional</item>
+    </string-array>
+
+    <string-array name="item_categories">
+        <item>All</item>
+        <item>Electronics</item>
+        <item>Books</item>
+        <item>Documents</item>
+        <item>Accessories</item>
+        <item>Clothing</item>
+        <item>Keys</item>
+        <item>Wallet/Purse</item>
+        <item>ID/Cards</item>
+        <item>Bags</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="payment_statuses">
+        <item>All</item>
+        <item>PENDING</item>
+        <item>PAID</item>
+        <item>OVERDUE</item>
+    </string-array>
+</resources> 

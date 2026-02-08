@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- Messages RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false"/>
+
+    <!-- Input Area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:gravity="center_vertical">
+
+        <!-- Microphone Button - PINK CIRCULAR BACKGROUND -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="24dp"
+            app:cardBackgroundColor="#5F4DE9"
+            app:cardElevation="2dp">
+
+            <ImageButton
+                android:id="@+id/btnMic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@android:drawable/ic_btn_speak_now"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Voice input"
+                android:padding="8dp"
+                app:tint="#FFFFFF"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Message Input -->
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type your message..."
+            android:background="@drawable/message_input_bg"
+            android:padding="12dp"
+            android:maxLines="4"
+            android:inputType="textMultiLine|textCapSentences"/>
+
+        <!-- Speaker Button - TEAL CIRCULAR BACKGROUND -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="24dp"
+            app:cardBackgroundColor="#5974F0"
+            app:cardElevation="2dp">
+
+            <ImageButton
+                android:id="@+id/btnSpeaker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@android:drawable/ic_lock_silent_mode_off"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Read last message"
+                android:padding="8dp"
+                app:tint="#FFFFFF"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Send Button - CUSTOM GREEN COLOR -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSend"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#4CAF50"
+            app:icon="@android:drawable/ic_menu_send"
+            app:iconTint="#FFFFFF"/>
+    </LinearLayout>
+</LinearLayout>

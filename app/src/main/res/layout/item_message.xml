@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+    <!-- Message Card (gravity will be set programmatically) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/messageCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:maxWidth="280dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="#E3F2FD">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Sender Name -->
+            <TextView
+                android:id="@+id/tvSenderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teacher Name"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"
+                android:layout_marginBottom="4dp"/>
+
+            <!-- Message Text -->
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is a sample message"
+                android:textSize="15sp"
+                android:textColor="#1565C0"
+                android:layout_marginBottom="4dp"/>
+
+            <!-- Timestamp -->
+            <TextView
+                android:id="@+id/tvTimestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:06"
+                android:textSize="10sp"
+                android:textColor="#1976D2"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.studentaid">
+
+    <!-- ============================================ -->
+    <!-- PERMISSIONS -->
+    <!-- ============================================ -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- ============================================ -->
+    <!-- HARDWARE FEATURES (OPTIONAL) -->
+    <!-- ============================================ -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_applogo"
+        android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/Theme.StudentAid">
+
+        <!-- ============================================ -->
+        <!-- FILE PROVIDER FOR OPENING FILES -->
+        <!-- ============================================ -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- ============================================ -->
+        <!-- LAUNCHER ACTIVITY -->
+        <!-- ============================================ -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ============================================ -->
+        <!-- USER TYPE SELECTION -->
+        <!-- ============================================ -->
+        <activity
+            android:name=".UserTypeSelectionActivity"
+            android:exported="false"
+            android:label="Select User Type"/>
+
+        <!-- ============================================ -->
+        <!-- AUTHENTICATION -->
+        <!-- ============================================ -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:label="Login"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:label="Register"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- ============================================ -->
+        <!-- DASHBOARDS -->
+        <!-- ============================================ -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false"
+            android:label="Student Dashboard"/>
+
+        <activity
+            android:name=".TeacherDashboardActivity"
+            android:exported="false"
+            android:label="Teacher Dashboard"/>
+
+        <activity
+            android:name=".RoommateFinderDashboardActivity"
+            android:exported="false"
+            android:label="Roommate Finder Dashboard"/>
+
+        <!-- ============================================ -->
+        <!-- STUDENT GUIDANCE MODULE -->
+        <!-- ============================================ -->
+        <activity
+            android:name=".StudentGuidanceActivity"
+            android:exported="false"
+            android:label="Student Guidance"
+            android:windowSoftInputMode="adjustResize"
+            android:parentActivityName=".DashboardActivity"/>
+
+        <!-- ============================================ -->
+        <!-- ROOMMATE FINDER MODULE -->
+        <!-- ============================================ -->
+        <activity
+            android:name=".RoommateFinderActivity"
+            android:exported="false"
+            android:label="Roommate Finder"
+            android:parentActivityName=".DashboardActivity"/>
+
+        <activity
+            android:name=".AddRequestActivity"
+            android:exported="false"
+            android:label="Add Roommate Request"
+            android:parentActivityName=".RoommateFinderActivity"/>
+
+        <activity
+            android:name=".ViewRequestsActivity"
+            android:exported="false"
+            android:label="View Requests"
+            android:parentActivityName=".RoommateFinderActivity"/>
+
+        <activity
+            android:name=".MyRequestActivity"
+            android:exported="false"
+            android:label="My Requests"
+            android:parentActivityName=".RoommateFinderActivity"/>
+
+        <!-- ============================================ -->
+        <!-- LOST & FOUND MODULE -->
+        <!-- ============================================ -->
+        <activity
+            android:name=".LostFoundActivity"
+            android:exported="false"
+            android:label="Lost and Found"
+            android:parentActivityName=".DashboardActivity"/>
+
+        <activity
+            android:name=".ReportLostActivity"
+            android:exported="false"
+            android:label="Report Lost Item"
+            android:parentActivityName=".LostFoundActivity"/>
+
+        <activity
+            android:name=".ViewLostItemsActivity"
+            android:exported="false"
+            android:label="View Lost Items"
+            android:parentActivityName=".LostFoundActivity"/>
+
+        <!-- ============================================ -->
+        <!-- STUDY MATERIALS MODULE -->
+        <!-- ============================================ -->
+        <activity
+            android:name=".AddStudyMaterialActivity"
+            android:exported="false"
+            android:label="Add Study Material"
+            android:parentActivityName=".DashboardActivity"/>
+
+        <activity
+            android:name=".ViewStudyMaterialsActivity"
+            android:exported="false"
+            android:label="View Study Materials"
+            android:parentActivityName=".AddStudyMaterialActivity"/>
+
+    </application>
+
+</manifest>
