@@ -38,41 +38,41 @@ Student Aid is a comprehensive Android-based mobile application developed to sim
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
 ### 🔹 Role Selection
-[<p align="center">
-  <img src="appScreenshots/RoleSelection.png" width="350"/>
-</p>](https://github.com/RAGAVI-2004/Student-Aid-App/blob/main/appScreenshots/RoleSelection.jpeg)
+<p align="center">
+  <img src="appScreenshots/role_selection.jpeg" width="350"/>
+</p>
 
 ### 🔹 Login Page
 <p align="center">
-  <img src="appScreenshots/Loginpage.png" width="350"/>
+  <img src="appScreenshots/login_page.jpeg" width="350"/>
 </p>
 
 ### 🔹 Signup Page
 <p align="center">
-  <img src="appScreenshots/Signuppage.png" width="350"/>
+  <img src="appScreenshots/signup_page.jpeg" width="350"/>
 </p>
 
 ### 🔹 Student Dashboard
 <p align="center">
-  <img src="appScreenshots/StudentDashboard.png" width="350"/>
+  <img src="appScreenshots/students_dashboard.jpeg" width="350"/>
 </p>
 
 ### 🔹 Teacher Dashboard
 <p align="center">
-  <img src="appScreenshots/TeachersDashboard.png" width="350"/>
+  <img src="appScreenshots/teachers_dashboard.jpeg" width="350"/>
 </p>
 
 ### 🔹 Study Material Upload
 <p align="center">
-  <img src="appScreenshots/StudyMaterialUpload.png" width="350"/>
+  <img src="appScreenshots/study_material_upload.jpeg" width="350"/>
 </p>
 
 ### 🔹 Roommate Finder
 <p align="center">
-  <img src="appScreenshots/RoomateFinder.png" width="350"/>
+  <img src="appScreenshots/roomate_finder.jpeg" width="350"/>
 </p>
 
 ---
@@ -81,23 +81,24 @@ Student Aid is a comprehensive Android-based mobile application developed to sim
 
 ### 🔹 Lost & Found Dashboard
 <p align="center">
-  <img src="appScreenshots/LostAndFound/lost_found_dashboard.jpeg" width="350"/>
+  <img src="appScreenshots/lost & found/lost&found_dashboard.jpeg" width="350"/>
 </p>
 
 ### 🔹 Reporting Lost Item
 <p align="center">
-  <img src="appScreenshots/LostAndFound/reporting_lost_item.jpeg" width="350"/>
+  <img src="appScreenshots/lost & found/reporting_lost_Item.jpeg" width="350"/>
 </p>
 
 ### 🔹 View Lost & Found Items
 <p align="center">
-  <img src="appScreenshots/LostAndFound/view_lost_found_items.jpeg" width="350"/>
+  <img src="appScreenshots/lost & found/view_lost_found_items.jpeg" width="350"/>
 </p>
 
 ### 🔹 Guidance Chat
 <p align="center">
-  <img src=["appScreenshots/GuidanceChat.png](https://github.com/RAGAVI-2004/Student-Aid-App/blob/main/appScreenshots/Guidance%20Chat.jpeg)" width="350"/>
+  <img src="appScreenshots/guidance_chat.jpeg" width="350"/>
 </p>
+
 
 **Technology Stack**
 
